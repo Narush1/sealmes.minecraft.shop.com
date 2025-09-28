@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #a84bd8, #f99157);
+  color: white;
+  overflow: hidden;
+  user-select: none;
+}
+
+#join-screen {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(10, 10, 10, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#join-screen input,
+#join-screen button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+#join-screen button {
+  background-color: #f99157;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#join-screen button:hover {
+  background-color: #d77a42;
+}
+
+#game {
+  background-color: #1e1e1e;
+  margin: 0 auto;
+  display: block;
+  border: 3px solid white;
+  border-radius: 12px;
+}
+
+#chat {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  max-height: 180px;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: monospace;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+
+#messages {
+  overflow-y: auto;
+  flex-grow: 1;
+  padding-right: 5px;
+}
+
+#messages div {
+  margin-bottom: 5px;
+  font-weight: 600;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+}
+
+#chatInput {
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #111;
+  font-family: monospace;
+}
